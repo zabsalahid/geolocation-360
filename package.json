@@ -2,7 +2,7 @@
   "name": "geolocation-360",
   "version": "1.0.0",
   "description": "A library for getting coordinates from mobile country code()\u001b[DMCC\u001b[C\u001b[Da\u001b[Da\u001b[2~\u001b[Da\u001b[C\u001b[D\u001b), mobile\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cnetwork code(MNC), location area code()\u001b[DLAC\u001b[C\u001b[D) and Cell ID()\u001b[DCID\u001b[Ca\u001b[Da\u001b[)\u001b[D)",
-  "main": "index.js",
+  "main": "lib/geolocation-360.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -41,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/zabsalahid/geolocation-360/issues"
   },
-  "homepage": "https://github.com/zabsalahid/geolocation-360#readme"
+  "homepage": "https://github.com/zabsalahid/geolocation-360#readme",
+  "dependencies": {
+    "httpreq": "^0.4.24"
+  }
 }
