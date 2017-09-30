@@ -3,11 +3,11 @@
 const geolocation = require('./lib/geolocation-360')()
 
 let params = {
-	cid: '31719',
-	lac: '11020',
 	mcc: '515',
 	mnc: '03',
-	apiKey: 'AIzaSyDCv4Q5PZgs6G4RIirGqKXZlXpelDDA5C4'
+	lac: '2b0c',
+	cid: '7be7',
+	apiKey: 'apiKey'
 }
 
 geolocation.requestGoogle(params, (err, result) => {
