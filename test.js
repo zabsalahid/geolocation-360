@@ -4,8 +4,7 @@ let params = {
 	cid: 31719,
 	lac: 11020,
 	mcc: 515,
-	mnc: 03,
-	apiKey: 'AIzaSyDCv4Q5PZgs6G4RIirGqKXZlXpelDDA5C4'
+	mnc: 03
 }
 
 console.log(geolocation)
