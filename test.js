@@ -4,13 +4,13 @@ const geolocation = require('./lib/geolocation-360')
 
 let init = {
 	googleApiKey: 'google api key',
-	openCellIdApiKey: 'open cell id token'
+	openCellIdApiKey: 'open cell id token',
+	mcc: '515',
+	mnc: '03',
 }
 geolocation.initialize(init)
 
 let params = {
-	mcc: '515',
-	mnc: '03',
 	lac: '2b0c',//11020
 	cid: '7be7',//31719
 }
