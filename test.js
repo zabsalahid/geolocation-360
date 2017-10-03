@@ -2,6 +2,12 @@
 
 const geolocation = require('./lib/geolocation-360')
 
+let init = {
+	googleApiKey: 'google api key',
+	openCellIdApiKey: 'open cell id token'
+}
+geolocation.initialize(init)
+
 let params = {
 	mcc: '515',
 	mnc: '03',
@@ -9,26 +15,26 @@ let params = {
 	cid: '7be7',//31719
 }
 
-geolocation.requestGoogle(params, (err, result) => {
-	if (result) {
-		console.log('google', result)
-	} else {
-		console.log('google error: ' + err.message)
-	}
-})
+	geolocation.requestGoogle(params, (err, result) => {
+		if (result) {
+			console.log('google', result)
+		} else {
+			console.log('google error: ' + err.message)
+		}
+	})
 
-geolocation.requestOpenCellId(params, (err, result) => {
-	if (result) {
-		console.log('openCellId', result)
-	} else {
-		console.log('openCellId error: ' + err.message)
-	}
-})
+	geolocation.requestOpenCellId(params, (err, result) => {
+		if (result) {
+			console.log('openCellId', result)
+		} else {
+			console.log('openCellId error: ' + err.message)
+		}
+	})
 
-geolocation.request(params, (err, result) => {
-	if (result) {
-		console.log('main', result)
-	} else {
-		console.log('main', err)
-	}
-})
+	geolocation.request(params, (err, result) => {
+		if (result) {
+			console.log('main', result)
+		} else {
+			console.log('main', err)
+		}
+	})
