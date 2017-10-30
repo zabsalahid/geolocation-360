@@ -24,7 +24,7 @@ var init = {
 	mnc: '03', //supply for default value
 };
 
-geolocation.initialize(init)
+geolocation.initialize(init);
 ```
 
 #### Requests
@@ -35,7 +35,7 @@ var params = {
 	cid: '7be7',
 	mcc: '515', //will use default value on init if not supplied
 	mnc: '05', //will use default value on init if not supplied
-}
+};
 
 //will use requests available in order of api key provided
 geolocation.request(params, (error, result) => {
@@ -46,14 +46,14 @@ geolocation.request(params, (error, result) => {
 		//	latitude: 14.498896,
 		//	longitude: 121.003997
 		//}
-		console.log(result)
+		console.log(result);
 	} else {
 		//prints `Provider` error: `Provider`: usageLimits | `error message`
-		console.log(result)
+		console.log(error);
 	}
-})
+});
 
-geolocation.requestGooglePrimitive(params, (error, result))
-geolocation.requestGoogle(params, (error, result))
-geolocation.requestOpenCellId(params, (error, result))
+geolocation.requestGooglePrimitive(params, (error, result));
+geolocation.requestGoogle(params, (error, result));
+geolocation.requestOpenCellId(params, (error, result));
 ```
