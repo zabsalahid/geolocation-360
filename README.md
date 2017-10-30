@@ -37,7 +37,7 @@ var params = {
 	mnc: '05', //will use default value on init if not supplied
 }
 
-``will use requests available in order of api key provided
+//will use requests available in order of api key provided
 geolocation.request(params, (error, result) => {
 	if (result) {
 		//prints
