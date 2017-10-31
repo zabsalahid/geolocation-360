@@ -42,7 +42,7 @@ geolocation.request(params, (error, result) => {
 	if (result) {
 		//prints
 		//{
-		//	provider: 'GooglePrimite | Google | OpenCellId',
+		//	provider: 'GooglePrimitive | Google | OpenCellId',
 		//	latitude: 14.498896,
 		//	longitude: 121.003997
 		//}
